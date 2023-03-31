@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #736f72;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e3e6;
+  }
+  
+  /* Estilos de encabezado */
+  header {
+    background-color: #9a8f97;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Estilos de sección */
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    margin-top: 0;
+    color: #000;
+  }
+  
+  /* Estilos de línea de tiempo */
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #b2b2b2;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -16px;
+    border-width: 16px 16px 16px 0;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: -14px;
+    width: 7px;
+    height: 7px;
+    background-color: #b2b2b2;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .container.left {
+    left: 0;
+  }
+  
+  .container.left::before {
+    left: -16px;
+    border-color: transparent transparent transparent #fff;
+  }
+  
+  .container.right {
+    left: 50%;
+  }
+  
+  .container.right::before {
+    left: auto;
+    right: -16px;
+    border-color: transparent #fff transparent transparent;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  .content::before {
+    content: '';
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    top: 20px;
+    left: -20px;
+  }
+  
+  .content h3 {
+    margin-top: 0;
+    color: #000;
+  }
+  
+  .content h4 {
+    margin-top: 0;
+    color: #9a8f97;
+  }
+  
+  .content h5 {
+    margin-top: 0;
+    color: #b2b2b2;
+  }
+  
+  .content p {
+    margin: 0;
+    color: #736f72;
+  }
+  
